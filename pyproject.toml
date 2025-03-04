@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["my_agent"]
+[tool.setuptools.package-dir]
+"my_agent" = "my_agent"
+
+[project]
+name = "langgraph-example"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "==3.11.11"
+dependencies = [
+  "langchain-anthropic>=0.3.8",
+  "langchain-community>=0.3.18",
+  "langchain-openai>=0.3.7",
+  "langgraph>=0.3.2",
+  "tavily-python>=0.5.1",
+]
